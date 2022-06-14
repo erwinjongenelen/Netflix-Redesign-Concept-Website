@@ -481,7 +481,8 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: 1400px
+  xxl: 1400px,
+  xxxl: 1500px
 ) !default;
 // scss-docs-end grid-breakpoints
 
@@ -499,7 +500,8 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1320px
+  xxl: 1320px,
+  xxxl: 1560px
 ) !default;
 // scss-docs-end container-max-widths
 
@@ -1092,7 +1094,7 @@ $zindex-tooltip:                    1080 !default;
 // Navs
 
 // scss-docs-start nav-variables
-$nav-link-padding-y:                .5rem !default;
+$nav-link-padding-y:                2.85rem !default;
 $nav-link-padding-x:                1rem !default;
 $nav-link-font-size:                null !default;
 $nav-link-font-weight:              null !default;
@@ -1121,7 +1123,7 @@ $nav-pills-link-active-bg:          $component-active-bg !default;
 $navbar-padding-y:                  $spacer * .5 !default;
 $navbar-padding-x:                  null !default;
 
-$navbar-nav-link-padding-x:         .5rem !default;
+$navbar-nav-link-padding-x:         55px;
 
 $navbar-brand-font-size:            $font-size-lg !default;
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
@@ -1133,18 +1135,18 @@ $navbar-brand-margin-end:           1rem !default;
 $navbar-toggler-padding-y:          .25rem !default;
 $navbar-toggler-padding-x:          .75rem !default;
 $navbar-toggler-font-size:          $font-size-lg !default;
-$navbar-toggler-border-radius:      $btn-border-radius !default;
-$navbar-toggler-focus-width:        $btn-focus-width !default;
+$navbar-toggler-border-radius:      0;
+$navbar-toggler-focus-width:        0;
 $navbar-toggler-transition:         box-shadow .15s ease-in-out !default;
 // scss-docs-end navbar-variables
 
 // scss-docs-start navbar-theme-variables
-$navbar-dark-color:                 rgba($white, .55) !default;
-$navbar-dark-hover-color:           rgba($white, .75) !default;
+$navbar-dark-color:                 $white;
+$navbar-dark-hover-color:           $white;
 $navbar-dark-active-color:          $white !default;
 $navbar-dark-disabled-color:        rgba($white, .25) !default;
 $navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
-$navbar-dark-toggler-border-color:  rgba($white, .1) !default;
+$navbar-dark-toggler-border-color:  transparent;
 
 $navbar-light-color:                rgba($black, .55) !default;
 $navbar-light-hover-color:          rgba($black, .7) !default;
@@ -1171,25 +1173,25 @@ $dropdown-padding-y:                .5rem !default;
 $dropdown-spacer:                   .125rem !default;
 $dropdown-font-size:                $font-size-base !default;
 $dropdown-color:                    $body-color !default;
-$dropdown-bg:                       $white !default;
+$dropdown-bg:                       $gray-700;
 $dropdown-border-color:             rgba($black, .15) !default;
-$dropdown-border-radius:            $border-radius !default;
+$dropdown-border-radius:            0;
 $dropdown-border-width:             $border-width !default;
 $dropdown-inner-border-radius:      subtract($dropdown-border-radius, $dropdown-border-width) !default;
 $dropdown-divider-bg:               $dropdown-border-color !default;
 $dropdown-divider-margin-y:         $spacer * .5 !default;
 $dropdown-box-shadow:               $box-shadow !default;
 
-$dropdown-link-color:               $gray-900 !default;
-$dropdown-link-hover-color:         shade-color($dropdown-link-color, 10%) !default;
-$dropdown-link-hover-bg:            $gray-200 !default;
+$dropdown-link-color:               $navbar-dark-color;
+$dropdown-link-hover-color:         $navbar-dark-hover-color;
+$dropdown-link-hover-bg:            transparent;
 
 $dropdown-link-active-color:        $component-active-color !default;
-$dropdown-link-active-bg:           $component-active-bg !default;
+$dropdown-link-active-bg:           transparent;
 
 $dropdown-link-disabled-color:      $gray-500 !default;
 
-$dropdown-item-padding-y:           $spacer * .25 !default;
+$dropdown-item-padding-y:           0.5rem;
 $dropdown-item-padding-x:           $spacer !default;
 
 $dropdown-header-color:             $gray-600 !default;

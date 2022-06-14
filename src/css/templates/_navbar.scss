@@ -1,0 +1,92 @@
+.navbar {
+    border-bottom: 1px solid rgba($white, 0.1);
+
+    @include media-breakpoint-down(lg) {
+        background-color: $body-bg;
+    }
+
+    // Brand
+    .navbar-brand {
+        img {
+            width: 95px;
+            height: auto;
+        }
+    }
+
+    // Nav links
+    .nav-link {
+        position: relative;
+
+        &:before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 20px;
+            margin: auto;
+            opacity: 0;
+            transition: $transition-base;
+
+            @include media-breakpoint-down(lg) {
+                display: none;
+            }
+        }
+
+        &:not(.icon-link) {
+            &:hover,
+            &.active,
+            &.dropdown-toggle.show {
+                &:before {
+                    opacity: 1;
+                    bottom: 25px;
+                }
+            }
+
+            &:hover:before,
+            &.dropdown-toggle.show:before {
+                background: $gray-700;
+            }
+
+            &.active:before {
+                background: $primary;
+            }
+        }
+    }
+
+    // Dropdowns
+    .dropdown-menu {
+        margin-top: 0;
+
+        @include media-breakpoint-down(lg) {
+            background-color: transparent;
+            padding: 0;
+        }
+    }
+
+    .dropdown-item {
+        transition: $transition-base;
+    }
+}
+
+// Mobile topbar
+.mobile-topbar {
+    a {
+        display: block;
+        padding: 20px 15px;
+    }
+}
+
+// Reponsive nav links
+.navbar-expand-lg .navbar-nav .nav-link {
+    @include media-breakpoint-down(xxl) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        padding: 10px 0;
+    }
+}
