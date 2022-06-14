@@ -65,13 +65,22 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 // Utilities
 @import "~bootstrap/scss/utilities/api";
 
+
+/* ==================================================
+*   Node Modules
+* ================================================ */
+
+@import "~tiny-slider/src/tiny-slider";
+
+
 /* ==================================================
 *   Custom Styles
 * ================================================ */
 
 // Components
 @import "components/buttons";
+@import "components/images";
 
 // Templates
-@import "templates/header";
+@import "templates/carousels";
 @import "templates/navbar";
