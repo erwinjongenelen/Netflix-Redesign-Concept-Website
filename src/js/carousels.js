@@ -5,5 +5,6 @@ const headerCarousel = tns({
     items: 1,
     slideBy: 'page',
     autoplay: false,
-    controls: false
-  });
+    controls: false,
+    speed: 800
+});
