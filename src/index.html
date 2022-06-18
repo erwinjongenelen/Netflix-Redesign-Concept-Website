@@ -183,7 +183,82 @@
     </header>
 
     <!-- Highlights -->
-    <section class="pt-75"></section>
+    <section class="pb-75">
+      <div class="container">
+        <ul class="nav nav-tabs d-flex justify-content-between align-items-center flex-row flex-nowrap" id="highlights-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="trends-tab" data-bs-toggle="tab" data-bs-target="#trends" type="button" role="tab" aria-controls="trends" aria-selected="true"><i class="fa-solid fa-arrow-trend-up"></i> <span class="d-block d-lg-inline-block">Trends</span></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="popular-tab" data-bs-toggle="tab" data-bs-target="#popular" type="button" role="tab" aria-controls="popular" aria-selected="false"><i class="fa-solid fa-fire-flame-curved"></i> <span class="d-block d-lg-inline-block">Popular</span></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="premieres-tab" data-bs-toggle="tab" data-bs-target="#premieres" type="button" role="tab" aria-controls="premieres" aria-selected="false"><i class="fa-solid fa-star"></i> <span class="d-block d-lg-inline-block">Premieres</span></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="recently-added-tab" data-bs-toggle="tab" data-bs-target="#recently-added" type="button" role="tab" aria-controls="recently-added" aria-selected="false"><i class="fa-solid fa-plus"></i> <span class="d-block d-lg-inline-block">Recent<span class="d-none d-lg-inline-block">ly Added</span></span></button>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content" id="highlights-tab-content">
+        <div class="tab-pane fade pt-30 pt-lg-60 show active" id="trends" role="tabpanel" aria-labelledby="trends-tab">
+          <div class="container">
+            <div class="overflow-container overflow-hidden">   
+              <div class="overflow-wrap row flex-row flex-nowrap gx-0 pb-10">
+                <div class="col-auto px-2 px-md-15">
+                  <button class="btn btn-primary">Action</button>
+                </div>
+                <div class="col-auto px-2 px-md-15">
+                  <button class="btn btn-gray-800">Adventure</button>
+                </div>
+                <div class="col-auto px-2 px-md-15">
+                  <button class="btn btn-gray-800">Animation</button>
+                </div>
+                <div class="col-auto px-2 px-md-15">
+                  <button class="btn btn-gray-800">Family</button>
+                </div>
+                <div class="col-auto px-2 px-md-15">
+                  <button class="btn btn-gray-800">Fantasy</button>
+                </div>
+                <div class="col-auto px-2 px-md-15">
+                  <button class="btn btn-gray-800">Comedy</button>
+                </div>
+                <div class="col-auto px-2 px-md-15">
+                  <button class="btn btn-gray-800">Documentary</button>
+                </div>
+                <div class="col-auto px-2 px-md-15">
+                  <button class="btn btn-gray-800">Music</button>
+                </div>
+                <div class="col-auto px-2 px-md-15">
+                  <button class="btn btn-gray-800">Romantic</button>
+                </div>
+                <div class="col-auto px-2 px-md-15">
+                  <button class="btn btn-gray-800">Science fiction</button>
+                </div>
+                <div class="col-auto px-2 px-md-15">
+                  <button class="btn btn-gray-800">Sport</button>
+                </div>
+                <div class="col-auto px-2 px-md-15">
+                  <button class="btn btn-gray-800">Thriller</button>
+                </div>
+                <div class="col-auto px-2 px-md-15">
+                  <button class="btn btn-gray-800">TV Shows</button>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+        <div class="tab-pane fade pt-30 pt-lg-60" id="popular" role="tabpanel" aria-labelledby="popular-tab">
+          Popular
+        </div>
+        <div class="tab-pane fade pt-30 pt-lg-60" id="premieres" role="tabpanel" aria-labelledby="premieres-tab">
+          Premieres
+        </div>
+        <div class="tab-pane fade pt-30 pt-lg-60" id="recently-added" role="tabpanel" aria-labelledby="recently-added-tab">
+          Recently Added
+        </div>
+      </div>
+    </section>
 
   </body>
 </html>

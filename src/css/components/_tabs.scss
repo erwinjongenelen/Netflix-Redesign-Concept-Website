@@ -1,0 +1,72 @@
+.nav-tabs {
+    height: 140px;
+    border-bottom: 2px solid $gray-700;
+
+    @include media-breakpoint-down(xl) {
+        height: auto;
+    }
+
+    @include media-breakpoint-down(lg) {
+        overflow-x: auto;
+    }
+
+    .nav-item {
+        flex: 1 1 0;
+
+        @include media-breakpoint-down(lg) {
+            flex: 0 1 auto; // default
+        }
+
+        button {
+            width: 100%;
+        }
+    }
+    .nav-link {
+        color: $gray-600;
+        font-weight: 600;
+        position: relative;
+        transition: $transition-base;
+
+        &:before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 20px;
+            margin: auto;
+            opacity: 0;
+            transition: $transition-base;
+        }
+
+        &:hover,
+        &.active,
+        &.dropdown-toggle.show {
+            &:before {
+                opacity: 1;
+                bottom: 25px;
+            }
+        }
+
+        &:hover:before,
+        &.dropdown-toggle.show:before {
+            background: $gray-400;
+        }
+
+        &.active {
+            font-size: $h2-font-size;
+
+            @include media-breakpoint-down(xl) {
+                font-size: $font-size-base;
+            }
+
+            &:before {
+                background: $primary;
+                width: 10px;
+                height: 10px;
+            }
+        }
+    }
+}
