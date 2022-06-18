@@ -22,8 +22,8 @@
 
         &:before {
             content: "";
-            width: 10px;
-            height: 10px;
+            width: 6px;
+            height: 6px;
             border-radius: 50%;
             position: absolute;
             left: 0;
@@ -50,11 +50,13 @@
 
             &:hover:before,
             &.dropdown-toggle.show:before {
-                background: $gray-700;
+                background: $gray-400;
             }
 
             &.active:before {
                 background: $primary;
+                width: 10px;
+                height: 10px;
             }
         }
     }
@@ -71,7 +73,24 @@
 
     .dropdown-item {
         transition: $transition-base;
+        color: $gray-400;
+
+        &:hover {
+            color: $white;
+        }
     }
+}
+
+// Dropdown toggle
+.dropdown-toggle:after {
+    @extend %fa-icon;
+    @extend .fa-solid;
+    content: fa-content($fa-var-angle-down);
+    font-size: $small-font-size;
+    vertical-align: baseline;
+    width: auto;
+    height: auto;
+    border: 0;
 }
 
 // Mobile topbar
