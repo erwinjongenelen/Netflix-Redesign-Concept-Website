@@ -6,5 +6,10 @@ const headerCarousel = tns({
     slideBy: 'page',
     autoplay: false,
     controls: false,
-    speed: 800
+    speed: 400,
+    responsive: {
+        768: {
+            speed: 800
+        }
+    }
 });

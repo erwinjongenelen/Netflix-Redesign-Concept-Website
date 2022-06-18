@@ -77,6 +77,9 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 *   Custom Styles
 * ================================================ */
 
+// Abstracts
+@import "abstracts/mixins";
+
 // Components
 @import "components/buttons";
 @import "components/images";
