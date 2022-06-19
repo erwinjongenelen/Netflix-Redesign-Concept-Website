@@ -1,5 +1,6 @@
 .media-item {
     text-decoration: none;
+    cursor: pointer;
 
     .media-image {
         transition: $transition-base;
