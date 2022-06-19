@@ -10,18 +10,20 @@
             transition: $transition-base;
         }
 
-        &:hover {
-            transform: scale(1.3);
+        @include media-breakpoint-up(lg) {
+            &:hover {
+                transform: scale(1.3);
 
-            img {
-                filter: blur(10px);
-                opacity: 0.75;
-            }
+                img {
+                    filter: blur(10px);
+                    opacity: 0.75;
+                }
 
-            .overlay-content {
-                visibility: visible;
-                opacity: 1;
-                margin-top: 0;
+                .overlay-content {
+                    visibility: visible;
+                    opacity: 1;
+                    margin-top: 0;
+                }
             }
         }
 
