@@ -1,0 +1,76 @@
+.media-item {
+    text-decoration: none;
+
+    .media-image {
+        transition: $transition-base;
+        display: block;
+        background-color: $body-bg;
+
+        img {
+            transition: $transition-base;
+        }
+
+        &:hover {
+            transform: scale(1.3);
+
+            img {
+                filter: blur(10px);
+                opacity: 0.75;
+            }
+
+            .overlay-content {
+                visibility: visible;
+                opacity: 1;
+                margin-top: 0;
+            }
+        }
+
+        .overlay-content {
+            transform: scale(0.77);
+            color: $white;
+            visibility: hidden;
+            opacity: 0;
+            transition: $transition-base;
+            transition-delay: .1s;
+            margin-top: 15px;
+
+            .control-btns button {
+                font-size: $lead-font-size;
+                background: transparent;
+                border: 0;
+                padding: 0;
+                background: none;
+                color: $white;
+                transition: $transition-base;
+
+                &:not(.active):hover {
+                    opacity: 0.5;
+                }
+
+                &.active {
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    .media-meta {
+        color: $gray-600;
+
+        button {
+            border: 0;
+            padding: 0;
+            background: none;
+            color: $gray-600;
+            transition: $transition-base;
+
+            &:not(.active):hover {
+                color: $white;
+            }
+    
+            &.active {
+                color: $primary;
+            }
+        }
+    }
+}

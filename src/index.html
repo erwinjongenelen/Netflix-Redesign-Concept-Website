@@ -15,7 +15,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark py-0">
       <div class="container">
         <a class="navbar-brand py-0" href="#">
-          <img src="<%=require('./assets/images/logo-netflix.svg')%>" />
+          <img src="<%=require('./assets/images/logo-netflix.svg')%>" alt="" />
         </a>
         
         <ul class="mobile-topbar list-inline mb-0 d-lg-none">
@@ -81,7 +81,7 @@
       <section id="header-carousel">
         <div>
           <div class="image-wrap">
-            <img class="img-cover object-position-center" src="<%=require('./assets/images/dark.webp')%>" />
+            <img class="img-cover object-position-center" src="<%=require('./assets/images/dark.webp')%>" alt="" />
           </div>
           <div class="content-wrap position-relative">
             <div class="container">
@@ -115,7 +115,7 @@
         </div>
         <div>
           <div class="image-wrap">
-            <img class="img-cover object-position-center" src="<%=require('./assets/images/a-cure-for-wellness.webp')%>" />
+            <img class="img-cover object-position-center" src="<%=require('./assets/images/a-cure-for-wellness.webp')%>" alt="" />
           </div>
           <div class="content-wrap position-relative">
             <div class="container">
@@ -149,7 +149,7 @@
         </div>
         <div>
           <div class="image-wrap">
-            <img class="img-cover object-position-center" src="<%=require('./assets/images/the-walking-dead.webp')%>" />
+            <img class="img-cover object-position-center" src="<%=require('./assets/images/the-walking-dead.webp')%>" alt="" />
           </div>
           <div class="content-wrap position-relative">
             <div class="container">
@@ -184,7 +184,7 @@
       </section>
     </header>
 
-    <!-- Highlights -->
+    <!-- Highlights tabs -->
     <section class="pb-75">
       <div class="container">
         <ul class="nav nav-tabs d-flex justify-content-between align-items-center flex-row flex-nowrap" id="highlights-tab" role="tablist">
@@ -204,6 +204,8 @@
       </div>
       <div class="tab-content" id="highlights-tab-content">
         <div class="tab-pane fade show active" id="trends" role="tabpanel" aria-labelledby="trends-tab">
+
+          <!-- Filters -->
           <div class="container pt-30 pt-lg-60">
             <div class="overflow-container overflow-hidden">   
               <div class="overflow-wrap row flex-row flex-nowrap gx-0 pb-10">
@@ -248,6 +250,51 @@
                 </div>
               </div>
             </div> 
+          </div>
+
+          <div class="container pt-30 pt-lg-60">
+            <div class="row gx-40">
+
+              <div class="col-lg-2">
+                <div class="media-item">
+                  <a href="#" class="media-image">
+                    <div class="ratio ratio-46x67 shadow-lg rounded overflow-hidden">
+                      <img class="img-cover object-position-center" src="<%=require('./assets/images/jurassic-world-fallen-kingdom.webp')%>" alt="" />
+
+                      <div class="overlay-content d-flex flex-column justify-content-between">
+                        <div>
+                          <div class="row">
+                            <div class="col mb-15 text-truncate h5 mb-0">Jurrasic World: Fallen Kingdom</div>
+                            <div class="col-auto">2h 09m</div>
+                          </div>
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum ex magnam hic architecto maxime omnis.</p>
+                        </div>
+                        <div>
+                          <div class="text-center mb-40"><button class="btn btn-primary text-uppercase"><i class="fa-solid fa-play"></i> <span class="ms-2">Watch</span></button></div>
+                          <div class="row justify-content-between control-btns">
+                            <div class="col-auto"><button class="active"><i class="fa-solid fa-heart"></i></button></div>
+                            <div class="col-auto"><button><i class="fa-solid fa-plus"></i></button></div>
+                            <div class="col-auto"><button><i class="fa-solid fa-eye"></i></button></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="media-meta py-30">
+                    <h2 class="h5 mb-2 text-white text-truncate">Jurrasic World: Fallen Kingdom</h2>
+                    <div class="row gx-20 align-items-center">
+                      <div class="col">2018</div>
+                      <div class="col-auto"><button class="active"><i class="fa-solid fa-heart"></i></button></div>
+                      <div class="col-auto"><button><i class="fa-solid fa-eye"></i></button></div>
+                      <div class="col-auto text-secondary">
+                        <i class="fa-solid fa-star me-2"></i><span class="fw-bolder me-3">6.1</span>
+                      </div>
+                    </div>
+                  </div>  
+                </div>
+              </div>
+              
+            </div>
           </div>
         </div>
         <div class="tab-pane fade" id="popular" role="tabpanel" aria-labelledby="popular-tab">

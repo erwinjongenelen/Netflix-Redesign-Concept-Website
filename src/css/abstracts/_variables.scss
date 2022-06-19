@@ -11,8 +11,8 @@ $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c6c76;
+$gray-500: #6c6c76;
+$gray-600: #4e4f54;
 $gray-700: #25232e;
 $gray-800: #17161b;
 $gray-900: #0d0c11;
@@ -393,7 +393,9 @@ $spacers: (
   5: $spacer * 3,
   10: 10px,
   15: 15px,
+  20: 20px,
   30: 30px,
+  40: 40px,
   45: 45px,
   50: 50px,
   60: 60px,
@@ -492,7 +494,7 @@ $grid-breakpoints: (
   lg: 992px,
   xl: 1200px,
   xxl: 1400px,
-  xxxl: 1500px
+  xxxl: 1540px
 ) !default;
 // scss-docs-end grid-breakpoints
 
@@ -511,7 +513,7 @@ $container-max-widths: (
   lg: 960px,
   xl: 1140px,
   xxl: 1320px,
-  xxxl: 1560px
+  xxxl: 1600px
 ) !default;
 // scss-docs-end container-max-widths
 
@@ -551,7 +553,7 @@ $border-color:                $gray-300 !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
-$border-radius:               .25rem !default;
+$border-radius:               10px;
 $border-radius-sm:            .2rem !default;
 $border-radius-lg:            .3rem !default;
 $border-radius-pill:          50rem !default;
@@ -560,7 +562,7 @@ $border-radius-pill:          50rem !default;
 // scss-docs-start box-shadow-variables
 $box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
 $box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
-$box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
+$box-shadow-lg:               0 1rem 3rem rgba($black, 0.8);
 $box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
 // scss-docs-end box-shadow-variables
 
@@ -586,7 +588,8 @@ $aspect-ratios: (
   "1x1": 100%,
   "4x3": calc(3 / 4 * 100%),
   "16x9": calc(9 / 16 * 100%),
-  "21x9": calc(9 / 21 * 100%)
+  "21x9": calc(9 / 21 * 100%),
+  "46x67": calc(67 / 46 * 100%),
 ) !default;
 // scss-docs-end aspect-ratios
 // stylelint-enable function-disallowed-list
